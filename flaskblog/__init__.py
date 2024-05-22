@@ -9,14 +9,14 @@ from flask_mail import Mail
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'd57424e55c6536c6f55d8a28c44849eb'
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///site.db"
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['MAIL_SERVER'] = 'mail.cloudwms.ro'
-app.config['MAIL_PORT'] = 465
-app.config['MAIl_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'test@cloudwms.ro'
-app.config['MAIL_PASSWORD'] = 'hackerii123!'
+app.config['SECRET_KEY'] = ''
+app.config['SQLALCHEMY_DATABASE_URI'] = ""
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = 
+app.config['MAIL_SERVER'] = ''
+app.config['MAIL_PORT'] = 
+app.config['MAIl_USE_TLS'] = 
+app.config['MAIL_USERNAME'] = ''
+app.config['MAIL_PASSWORD'] = ''
 mail = Mail(app)
 mail.init_app(app)
 
